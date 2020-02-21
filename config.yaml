@@ -1,0 +1,53 @@
+options:
+  advertised-hostname:
+    description: Keystone Hostname
+    type: string
+    default: keystone-k8s
+  advertised-port:
+    description: Keystone Port
+    type: int
+    default: 5000
+  keystone_db_password:
+    description: Keystone DB password
+    type: string
+    default: 'admin'
+  region_id:
+    description: Keystone Region Id
+    type: string
+    default: RegionOne
+  user_domain_name:
+    description: Keystone User Domain Name
+    type: string
+    default: default
+  project_domain_name:
+    description: Keystone Project Domain Name
+    type: string
+    default: default
+  admin_username:
+    description: Keystone Admin Username
+    type: string
+    default: admin
+  admin_password:
+    description: Keystone Admin Password
+    type: string
+    default: admin
+  admin_project:
+    description: Keystone Admin Project
+    type: string
+    default: admin
+  service_username:
+    description: Keystone Service Username
+    type: string
+    default: nbi
+  service_password:
+    description: Keystone Service Password
+    type: string
+    default: nbi
+  service_project:
+    description: Keystone Service Project
+    type: string
+    default: service
+  image:
+    type: string
+    description: OCI image
+    default: opensourcemano/keystone:7

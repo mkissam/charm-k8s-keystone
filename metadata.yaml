@@ -1,0 +1,19 @@
+name: keystone-k8s
+summary: "Keystone for OSM"
+maintainers:
+    - "SolutionsQA <solutionsqa@lists.canonical.com>"
+description: |
+   A CAAS charm to deploy Keystone for OSM
+tags:
+    - "application"
+series:
+    - "kubernetes"
+requires:
+    mysql:
+        interface: mysql
+provides:
+    keystone:
+        interface: keystone
+deployment:
+    type: stateless
+    service: cluster
